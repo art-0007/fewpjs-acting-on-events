@@ -1,21 +1,4 @@
-// Your code here
-
 let dodger = document.getElementById("dodger");
-// Better solution:
-//   function moveDodger(key) {
-//     let leftNumbers = dodger.style.left.replace("px", "");
-//     let left = parseInt(leftNumbers, 10);
-  
-//     if (key === "ArrowLeft" && left > 0) {
-//       dodger.style.left = `${left - 1}px`;
-//     } else if (key === "ArrowRight" && left < 360) {
-//         dodger.style.left = `${left + 1}px`;
-//     }
-//   }
-
-//   document.addEventListener("keydown", function(e) {
-//     moveDodger(e.key);
-//   });
 
 function moveDodgerLeft() {
     let leftNumbers = dodger.style.left.replace("px", "");
@@ -42,4 +25,3 @@ function moveDodgerLeft() {
         moveDodgerRight();
       }
   });
-
